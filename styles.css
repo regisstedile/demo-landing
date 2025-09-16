@@ -1,0 +1,533 @@
+/* ===========================================================
+   OUTSOURCING DE IMPRESSÃO - LANDING PAGE PREMIUM
+   Design: Dark Theme + Green Accent (#30ff69)
+   =========================================================== */
+
+:root {
+    /* Core Colors */
+    --accent-green: #30ff69;
+    --accent-green-hover: #28e55f;
+    --bg-primary: #111111;
+    --bg-secondary: #1a1a1a;
+    --bg-dark: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+    
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    
+    /* Spacing */
+    --section-padding: 80px 0;
+    --container-padding: 0 15px;
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.5s ease;
+}
+
+/* ===========================================================
+   RESET & BASE STYLES
+   =========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+   =========================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.accent-text {
+    color: var(--accent-green);
+}
+
+/* ===========================================================
+   HEADER & NAVIGATION
+   =========================================================== */
+
+#header {
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(48, 255, 105, 0.1);
+    transition: var(--transition-fast);
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    transition: var(--transition-fast);
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-green) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-green);
+    transition: var(--transition-fast);
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--text-primary);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ===========================================================
+   HERO SECTION
+   =========================================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%2330ff69" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    font-family: var(--font-secondary);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image img {
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.hero-image:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(48, 255, 105, 0.2);
+}
+
+/* ===========================================================
+   BUTTONS
+   =========================================================== */
+
+.btn {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: var(--transition-fast);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-hover) 100%);
+    color: var(--bg-primary);
+    border: 2px solid var(--accent-green);
+}
+
+.btn-primary:hover {
+    background: var(--bg-primary);
+    color: var(--accent-green);
+    border-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(48, 255, 105, 0.3);
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+}
+
+.btn-outline-light:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* ===========================================================
+   SECTIONS
+   =========================================================== */
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===========================================================
+   CARDS
+   =========================================================== */
+
+.problem-card,
+.benefit-item,
+.step-card,
+.testimonial-card,
+.sector-card {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(48, 255, 105, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: var(--transition-smooth);
+    height: 100%;
+}
+
+.problem-card:hover,
+.benefit-item:hover,
+.step-card:hover,
+.testimonial-card:hover,
+.sector-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-green);
+    box-shadow: 0 20px 40px rgba(48, 255, 105, 0.1);
+}
+
+.problem-icon,
+.benefit-icon,
+.sector-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-hover) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--bg-primary);
+    font-size: 1.5rem;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-green);
+    color: var(--bg-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    font-family: var(--font-secondary);
+}
+
+/* ===========================================================
+   ACCORDION
+   =========================================================== */
+
+.accordion-item {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(48, 255, 105, 0.1);
+    border-radius: 10px !important;
+    margin-bottom: 1rem;
+}
+
+.accordion-button {
+    background: transparent;
+    color: var(--text-primary);
+    border: none;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--accent-green);
+    color: var(--bg-primary);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-body {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 1.5rem;
+}
+
+/* ===========================================================
+   FORMS
+   =========================================================== */
+
+.form-control,
+.form-select {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(48, 255, 105, 0.2);
+    color: var(--text-primary);
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: var(--transition-fast);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: var(--bg-secondary);
+    border-color: var(--accent-green);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.2rem rgba(48, 255, 105, 0.25);
+}
+
+.form-label {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+
+.form-check-label {
+    color: var(--text-secondary);
+}
+
+/* ===========================================================
+   RESPONSIVE DESIGN
+   =========================================================== */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .btn-lg {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* ===========================================================
+   ANIMATIONS
+   =========================================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===========================================================
+   UTILITIES
+   =========================================================== */
+
+.bg-light {
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-accent {
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-hover) 100%);
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* ===========================================================
+   PRINT STYLES
+   =========================================================== */
+
+@media print {
+    .navbar,
+    .hero-cta,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero-section {
+        background: white !important;
+    }
+}
