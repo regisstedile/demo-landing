@@ -1,0 +1,31 @@
+{
+  "name": "outsourcing-impressao-landing",
+  "version": "1.0.0",
+  "description": "Landing page premium para empresa de outsourcing de impressão",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server 8000",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "landing-page",
+    "outsourcing",
+    "impressao",
+    "print-management",
+    "business",
+    "premium-design"
+  ],
+  "author": "Outsourcing Print Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/regisstedile/demo-landing"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
