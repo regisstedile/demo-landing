@@ -1,0 +1,421 @@
+/* ================================================================
+   Customizações para Landing Page
+   ================================================================ */
+
+/* Cores Personalizadas */
+:root {
+    --cor-principal: #FF6B35;
+    --cor-secundaria: #2C3E50;
+    --cor-texto: #34495E;
+    --cor-fundo: #F8F9FA;
+    --cor-branco: #FFFFFF;
+    --cor-cinza: #6C757D;
+}
+
+/* Header Personalizado */
+#header.transparent-header {
+    background: rgba(44, 62, 80, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+#header.transparent-header .menu-link {
+    color: var(--cor-branco);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#header.transparent-header .menu-link:hover {
+    color: var(--cor-principal);
+}
+
+/* Hero Section Personalizado */
+#slider {
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, var(--cor-principal) 100%);
+    position: relative;
+}
+
+#slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+#slider .display-3 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+#slider .lead {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Botões Personalizados */
+.button-3d {
+    background: var(--cor-principal);
+    border-color: var(--cor-principal);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.button-3d:hover {
+    background: #E55A2B;
+    border-color: #E55A2B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.button-border {
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+    transition: all 0.3s ease;
+}
+
+.button-border:hover {
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    transform: translateY(-2px);
+}
+
+/* Feature Boxes Personalizados */
+.feature-box {
+    padding: 2rem;
+    background: var(--cor-branco);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.feature-box-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--cor-principal), #FF8C42);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.feature-box-icon i {
+    font-size: 2rem;
+    color: var(--cor-branco);
+}
+
+.feature-box:hover .feature-box-icon {
+    transform: scale(1.1);
+}
+
+.feature-box h4 {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    color: var(--cor-cinza);
+    line-height: 1.6;
+}
+
+/* Seções Personalizadas */
+.section {
+    padding: 5rem 0;
+}
+
+.section.bg-light {
+    background: var(--cor-fundo);
+}
+
+.section h2, .section h3 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.section .text-muted {
+    color: var(--cor-cinza);
+}
+
+/* Counter Personalizado */
+.counter {
+    text-align: center;
+    padding: 1rem;
+}
+
+.counter-value {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+    line-height: 1;
+}
+
+.counter-label {
+    display: block;
+    font-size: 1rem;
+    color: var(--cor-cinza);
+    margin-top: 0.5rem;
+}
+
+/* Pricing Boxes Personalizados */
+.pricing-box {
+    background: var(--cor-branco);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+
+.pricing-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-box.featured {
+    border: 3px solid var(--cor-principal);
+    transform: scale(1.05);
+}
+
+.pricing-box.featured::before {
+    content: 'Mais Popular';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.pricing-header h4 {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.pricing-price {
+    margin-bottom: 2rem;
+}
+
+.price-unit {
+    font-size: 1.5rem;
+    color: var(--cor-cinza);
+    vertical-align: top;
+}
+
+.price-amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+    line-height: 1;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: var(--cor-cinza);
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    padding: 0.5rem 0;
+    color: var(--cor-texto);
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* Formulário Personalizado */
+.form-control, .sm-form-control {
+    border: 2px solid #E9ECEF;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .sm-form-control:focus {
+    border-color: var(--cor-principal);
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+/* Footer Personalizado */
+#footer {
+    background: var(--cor-secundaria);
+    color: var(--cor-branco);
+}
+
+#footer h4, #footer h5 {
+    color: var(--cor-branco);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#footer a {
+    color: #BDC3C7;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: var(--cor-principal);
+}
+
+#footer .social-icon {
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+#footer .social-icon:hover {
+    background: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .pricing-box.featured {
+        transform: none;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-box {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading personalizado */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid var(--cor-principal);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Efeitos de hover para imagens */
+.img-hover-effect {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Badges personalizados */
+.badge-custom {
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Tooltips personalizados */
+.tooltip-custom {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip-custom::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.tooltip-custom:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Seu Nome" />
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,900&display=swap" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    
+    <!-- Landing Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="demos/landing/landing.css" type="text/css" />
+    <link rel="stylesheet" href="demos/landing/css/fonts.css" type="text/css" />
+    
+    <!-- Customizações -->
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom-landing.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Cor personalizada -->
+    <link rel="stylesheet" href="css/colors.php?color=FF6B35" type="text/css" />
+    
+    <title>Minha Landing Page Personalizada | Canvas</title>
+</head>
+
+<body class="stretched">
+    <div id="wrapper" class="clearfix">
+        
+        <!-- Header Personalizado -->
+        <header id="header" class="transparent-header full-header dark no-sticky" data-responsive-class="not-dark">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row">
+                        
+                        <!-- Logo Personalizado -->
+                        <div id="logo" class="border-right-0">
+                            <a href="exemplo_customizacao.html" class="standard-logo" data-dark-logo="images/logo-dark.png">
+                                <img src="images/logo.png" alt="Minha Empresa">
+                            </a>
+                        </div>
+                        
+                        <div id="primary-menu-trigger">
+                            <svg class="svg-trigger" viewBox="0 0 100 100">
+                                <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                                <path d="m 30,50 h 40"></path>
+                                <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                            </svg>
+                        </div>
+                        
+                        <!-- Menu Personalizado -->
+                        <nav class="primary-menu not-dark with-arrows">
+                            <ul class="mr-0 border-0 menu-container">
+                                <li class="menu-item"><a class="menu-link" href="#home"><div>Início</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#features"><div>Recursos</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#about"><div>Sobre</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#pricing"><div>Preços</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#contact"><div>Contato</div></a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header>
+        
+        <!-- Hero Section Personalizado -->
+        <section id="slider" class="slider-element dark min-vh-100 include-header" style="background-image: url('demos/landing/images/hero/1.svg');">
+            <div class="slider-inner flex-column">
+                <div class="vertical-middle">
+                    <div class="container">
+                        <div class="row align-items-lg-center no-gutters">
+                            
+                            <div class="col-lg-6 col-md-6">
+                                <!-- Título Principal Personalizado -->
+                                <h2 class="display-3 font-weight-bold text-white">
+                                    Transforme Sua<br>Ideia em Realidade.
+                                </h2>
+                                <p class="lead mb-4 font-weight-normal">
+                                    A melhor solução para seus projetos digitais. Inovação e qualidade em cada detalhe.
+                                </p>
+                                
+                                <!-- Botões Personalizados -->
+                                <div class="d-flex flex-column flex-sm-row">
+                                    <a href="#features" class="button button-3d button-large m-0 me-2 mb-2 mb-sm-0">
+                                        <i class="icon-line-play me-2"></i>Começar Agora
+                                    </a>
+                                    <a href="#about" class="button button-border button-large m-0">
+                                        <i class="icon-line-info me-2"></i>Saiba Mais
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 text-center">
+                                <!-- Imagem ou Vídeo Personalizado -->
+                                <img src="demos/landing/images/hero/phone.png" alt="Produto" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section Personalizado -->
+        <section id="features" class="section bg-white">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-6 text-center">
+                        <h3 class="h2 mb-3">Nossos Recursos</h3>
+                        <p class="text-muted">Descubra o que torna nossa solução única e poderosa</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon">
+                                <i class="icon-line-rocket"></i>
+                            </div>
+                            <h4>Performance</h4>
+                            <p>Velocidade e eficiência em cada operação. Otimizado para resultados excepcionais.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon">
+                                <i class="icon-line-shield"></i>
+                            </div>
+                            <h4>Segurança</h4>
+                            <p>Proteção avançada para seus dados. Segurança em primeiro lugar sempre.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon">
+                                <i class="icon-line-headphones"></i>
+                            </div>
+                            <h4>Suporte 24/7</h4>
+                            <p>Equipe especializada disponível a qualquer momento para ajudar você.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section Personalizado -->
+        <section id="about" class="section bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="h2 mb-4">Sobre Nossa Empresa</h3>
+                        <p class="lead">Somos uma empresa inovadora focada em transformar ideias em soluções digitais de sucesso.</p>
+                        <p>Com anos de experiência no mercado, desenvolvemos produtos que realmente fazem a diferença na vida dos nossos clientes.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="counter">
+                                    <span class="counter-value" data-from="0" data-to="500" data-speed="2000">0</span>
+                                    <span class="counter-label">Projetos Concluídos</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counter">
+                                    <span class="counter-value" data-from="0" data-to="98" data-speed="2000">0</span>
+                                    <span class="counter-label">% Satisfação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 text-center">
+                        <img src="demos/landing/images/about/1.jpg" alt="Sobre Nós" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section Personalizado -->
+        <section id="pricing" class="section bg-white">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-6 text-center">
+                        <h3 class="h2 mb-3">Nossos Planos</h3>
+                        <p class="text-muted">Escolha o plano ideal para suas necessidades</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h4>Básico</h4>
+                                <div class="pricing-price">
+                                    <span class="price-unit">R$</span>
+                                    <span class="price-amount">29</span>
+                                    <span class="price-period">/mês</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>5 Projetos</li>
+                                    <li>Suporte por Email</li>
+                                    <li>1GB Armazenamento</li>
+                                    <li>Relatórios Básicos</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-action">
+                                <a href="#contact" class="button button-border button-large">Escolher Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="pricing-box featured">
+                            <div class="pricing-header">
+                                <h4>Profissional</h4>
+                                <div class="pricing-price">
+                                    <span class="price-unit">R$</span>
+                                    <span class="price-amount">59</span>
+                                    <span class="price-period">/mês</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>15 Projetos</li>
+                                    <li>Suporte Prioritário</li>
+                                    <li>10GB Armazenamento</li>
+                                    <li>Relatórios Avançados</li>
+                                    <li>Integrações</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-action">
+                                <a href="#contact" class="button button-3d button-large">Escolher Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="pricing-box">
+                            <div class="pricing-header">
+                                <h4>Empresarial</h4>
+                                <div class="pricing-price">
+                                    <span class="price-unit">R$</span>
+                                    <span class="price-amount">99</span>
+                                    <span class="price-period">/mês</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>Projetos Ilimitados</li>
+                                    <li>Suporte 24/7</li>
+                                    <li>100GB Armazenamento</li>
+                                    <li>Relatórios Customizados</li>
+                                    <li>API Completa</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-action">
+                                <a href="#contact" class="button button-border button-large">Escolher Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section Personalizado -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-6 text-center">
+                        <h3 class="h2 mb-3">Entre em Contato</h3>
+                        <p class="text-muted">Estamos aqui para ajudar você a transformar sua ideia em realidade</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" placeholder="Seu Nome">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" placeholder="Seu Email">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" placeholder="Seu Telefone">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <select id="template-contactform-service" name="template-contactform-service" class="sm-form-control">
+                                        <option value="">Selecione um Serviço</option>
+                                        <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                                        <option value="Design Gráfico">Design Gráfico</option>
+                                        <option value="Marketing Digital">Marketing Digital</option>
+                                        <option value="Consultoria">Consultoria</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" placeholder="Sua Mensagem"></textarea>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">
+                                        <i class="icon-line-paper-plane me-2"></i>Enviar Mensagem
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer Personalizado -->
+        <footer id="footer" class="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <h4>Minha Empresa</h4>
+                        <p>Transformando ideias em soluções digitais de sucesso. Inovação e qualidade em cada projeto.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Links Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#features">Recursos</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#pricing">Preços</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Contato</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="icon-line-phone me-2"></i> (11) 99999-9999</li>
+                            <li><i class="icon-line-mail me-2"></i> contato@minhaempresa.com</li>
+                            <li><i class="icon-line-map-pin me-2"></i> São Paulo, SP</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Newsletter</h5>
+                        <p>Receba nossas novidades em primeira mão!</p>
+                        <form class="mb-0">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Seu email">
+                                <button class="btn btn-primary" type="submit">Inscrever</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.js"></script>
+    
+</body>
+</html>
